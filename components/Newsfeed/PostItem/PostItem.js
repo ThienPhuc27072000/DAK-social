@@ -1,4 +1,4 @@
-import Logo from "/public/images/Logo.png";
+import Logo from "/public/images/avatar.jpg";
 import ImagePost from "/public/images/bg.jpg";
 import Styles from "./PostItem.module.css";
 import Image from "next/image";

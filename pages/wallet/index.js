@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import QRCode from "../../public/images/qrcode.png";
-import Coin from "../../public/images/Logo.png";
+import Coin from "../../public/images/avatar.jpg";
 // import PopupSendMoney from "../../components/PopupWallet/PopupSendMoney/PopupSendMoney";
 // import PopupRequestMoney from "../../components/PopupWallet/PopupRequestMoney/PopupRequestMoney";
 // import PopupStake from "../../components/PopupWallet/PopupStake/PopupStake";
