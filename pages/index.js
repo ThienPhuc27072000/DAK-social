@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Layout, { siteTitle } from '../components/Layout/Layout'
 import Styled from '../styles/Home.module.css'
-import Newsfeed from '../components/newsfeed/Newsfeed';
+import Newsfeed from '../components/Newsfeed/Newsfeed';
 import Shortcut from '../components/Shortcut/Shortcut';
 import PopupStatistic from '../components/UserProfile/PopupStatistic/PopupStatistic'
 import Header from '../components/Header/Header'
