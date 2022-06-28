@@ -15,7 +15,7 @@ export default function PostItem({key, content, link}) {
                     <Image src={Logo} alt="Avatar"/>
                 </div>
                 <div className={Styles.profile__post__info}>
-                    <h2>Khoa Lê <span>Đã thay đổi ảnh hồ sơ.</span></h2>
+                    <h2>Thiên Phúc<span>Đã thay đổi ảnh hồ sơ.</span></h2>
                     <p>7 giờ trước</p>
                 </div>
                 <span>...</span>
