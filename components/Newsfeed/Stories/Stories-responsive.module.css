@@ -1,0 +1,45 @@
+
+
+
+@media screen and (max-width: 1200px) {
+    .story {
+        width: 270px;
+        height: 202.5px;
+    }
+    .story:hover {
+        width: 290px;
+        height: 217.5px;
+    }
+    .story-title {
+        font-size:15px;
+        bottom: 79px;
+    }
+    .scrollbar {
+        height: 222px;
+    }
+    .right-pagination, .left-pagination {
+        top: 100px
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .story {
+        width: 180px;
+        height: 135px;
+        
+    }
+    .story:hover {
+        width: 200px;
+        height: 150px;
+    }
+    .story-title {
+        font-size:10px;
+        bottom: 60px;
+    }
+    .scrollbar {
+        height: 155px;
+    }
+    .right-pagination, .left-pagination {
+        top: 70px
+    }
+}

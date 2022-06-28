@@ -1,0 +1,143 @@
+.containerStory {
+    position: relative;
+}
+
+.scrollbar {
+    display: flex;
+    width: fit-content;
+    height: 240px;
+    margin-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    border-radius: 10px !important;
+}
+
+.right-pagination {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+
+.left-pagination {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+.right-pagination, .left-pagination {
+    top: 0;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--text-color);
+    height: 240px;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.right-pagination {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.left-pagination {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.right-pagination:hover, 
+.left-pagination:hover {
+    /* background-color: rgb(255, 255, 255, 1);
+    color: var(--text-color); */
+    opacity: 1;
+}
+
+.story {
+    margin-right: 20px;
+    width: 320px;
+    height: 240px;
+    background: var(--background-image);
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.story-image {
+    transition: all ease 0.4s;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.story:hover .story-image{
+    /* min-height: 110% !important;
+    border-radius: 50px; */
+    transform: scale(1.1);
+}
+
+.story-title {
+    position: absolute;
+    bottom: 0px;
+    font-size: 20px;
+    padding: 7px 20px;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.85);
+    margin: 0px;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media (max-width: 520px) {
+    
+}
+
+@media (max-width: 720px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+    .story {
+        width: 270px;
+        height: 202.5px;
+    }
+    .story-title {
+        font-size:15px;
+        bottom: 79px;
+    }
+    .scrollbar {
+        height: 222px;
+    }
+    .right-pagination, .left-pagination {
+        top: 120px
+    }
+    .right-pagination {
+    }
+    .left-pagination {
+    }
+    .story-image:hover {
+        border-radius: 45px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .story {
+        width: 180px;
+        height: 135px;
+    }
+    .story-title {
+        font-size:10px;
+        bottom: 60px;
+    }
+    .scrollbar {
+        height: 155px;
+    }
+    .right-pagination, .left-pagination {
+        top: 90px
+    }
+    .story-image:hover {
+        border-radius: 40px;
+    }
+}

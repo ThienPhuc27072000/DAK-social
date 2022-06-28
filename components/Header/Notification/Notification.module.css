@@ -1,0 +1,141 @@
+@keyframes leftIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  } to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.overlayDropdownNoti {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 1920px;
+}
+
+.dropDownNoti {
+  border-radius: 20px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  z-index: 5;
+  width: 400px;
+  height: 90%;
+  animation: leftIn 0.2s;
+  box-shadow: 0px 2px 5px 2px var(--box-shadow-color);
+}
+
+.Text__Notification{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.Text__h2__Notification{
+    position: relative;
+    margin: 0rem;
+    padding: 0rem;
+    text-align: center;
+    color: var(--text-color);
+    margin-left: 15px;
+}
+
+.info__Noti {
+    height: 90%;
+}
+
+.list__Noti {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    width: 400px;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-bottom: 15px
+}
+
+/* ScrollBar */
+.list__Noti::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--primary-color);
+}
+
+.list__Noti::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+
+.list__Noti::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+.item__Noti {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+}
+
+.item__Noti:hover {
+    background-color: var(--bg-color);
+}
+
+.avatar__Noti {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    max-width: 15%;
+}
+
+.area__Noti {
+    margin-left: 10px;
+    width: 85%;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.username__Noti {
+    margin: 0;
+    font-weight: 500;
+}
+
+.content__Noti {
+    margin: 0;
+    font-weight: 400;
+    width: 300px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+} 
+
+.time__Noti {
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+} 
+
+.btn {
+    background-color: var(--main-color);
+    border: none;
+    padding: 8px 10px;
+    font-weight: 600;
+    border-radius: 4px;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 20%;
+}
+
+

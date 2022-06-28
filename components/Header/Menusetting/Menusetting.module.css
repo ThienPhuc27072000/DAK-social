@@ -1,0 +1,172 @@
+@keyframes leftIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  } to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.overlayDropdownMenu {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 1920px;
+}
+
+.dropDownMenu {
+  display: inline-block;
+  border-radius: var(--box-borderRadius-size);
+  background-color: var(--primary-color);
+  padding: 15px;
+  width: 370px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  animation: leftIn 0.2s;
+  box-shadow: 0px 2px 5px 2px var(--box-shadow-color);
+}
+
+.menu_setting {
+    color: var(--text-color);
+}
+
+.goTo_profile {
+    display: flex;
+    padding: 10px 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: var(--text-color);
+}
+
+.goTo_profile:hover {
+    background-color: var(--bg-color);
+}
+
+.avatar_user {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.info_user {
+    margin-left: 15px;
+}
+
+.name_user {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sub_name_user {
+
+}
+
+.features {
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    padding: 10px 0;
+}
+
+.list_feature {
+    list-style-type: none;
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.feature_item {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    align-items: center;
+}
+
+.feature_item:hover {
+    background-color: var(--bg-color);
+    border-radius: var(--box-borderRadius-size);
+}
+
+.copyright_menusetting {
+    margin-top: 10px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.goBackMainMenu {
+  display: flex;
+  align-items: center;
+}
+
+.editReactIcon {
+  font-size: 20px;
+}
+
+/* Nút chuyển mode light-dark */
+.switch {
+  display: inline-block;
+  position: relative;
+  width: 42px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 19px;
+  width: 19px;
+  top: 2px;
+  left: 4px;
+  background-color: var(--text-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--main-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--main-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(20px);
+  transform: translateX(15px);
+}
+  
+.slider {
+  border-radius: 34px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+/* kết thúc nút chuyển mode */
