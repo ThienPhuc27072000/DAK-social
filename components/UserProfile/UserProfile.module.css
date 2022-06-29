@@ -38,6 +38,10 @@
     z-index: 1;
 }
 
+.imgAvatar {
+    border-radius: 50%;
+}
+
 .textProfile {
     position: absolute;
     background-color: var(--white-color);
